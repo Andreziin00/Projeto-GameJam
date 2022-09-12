@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Escadaria
+  - p1
+  - p4
+  - Ref
+  - PA
+  - E1
+  - E2
+  - Coz
   layers:
   - Default
   - TransparentFX

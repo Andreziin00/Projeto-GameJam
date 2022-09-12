@@ -6,9 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/save.unity
-    guid: 29e2500b8a1c15c40ba0fe33c45c186f
+    path: Assets/Scenes/newSave.unity
+    guid: 91bf9994e80462b409ee426138bc5c40
   - enabled: 1
     path: Assets/Scenes/2andar.unity
     guid: 4f03da44a73d1794793f4992fd3f0e4d
+  - enabled: 1
+    path: Assets/Scenes/auditorio.unity
+    guid: 493250ca019518446b71d62347978377
+  - enabled: 1
+    path: Assets/Scenes/bathroom.unity
+    guid: f9596081f64ea7c4493533d3a402ea60
+  - enabled: 1
+    path: Assets/Scenes/kitchen.unity
+    guid: 3420faea379add7468615e619d8598e7
+  - enabled: 1
+    path: Assets/Scenes/library.unity
+    guid: 454204b866c5f88449cb9c0a361db5e5
+  - enabled: 1
+    path: Assets/Scenes/house.unity
+    guid: 9a3bda0bb0460b84abeacfe5ee48cf2a
+  - enabled: 1
+    path: Assets/Scenes/refeitorio.unity
+    guid: 5d5960f25a8119349b71e859cf28a277
   m_configObjects: {}
