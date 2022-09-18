@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2a7be1453dc4d8d4fb2e9202727c6b51
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 0101cdd3f98e287449d70d12271b43bd
+  - enabled: 1
     path: Assets/Scenes/newSave.unity
     guid: 91bf9994e80462b409ee426138bc5c40
   - enabled: 1
@@ -29,4 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/refeitorio.unity
     guid: 5d5960f25a8119349b71e859cf28a277
+  - enabled: 1
+    path: Assets/Scenes/classrooms/classroom.unity
+    guid: 5d9b77ae8e15ebf49bc6fc920d8c766b
+  - enabled: 1
+    path: Assets/Scenes/classrooms/classroom2.unity
+    guid: 5f78fd6f837b5914ab5f23f297ba44f2
+  - enabled: 1
+    path: Assets/Scenes/classrooms/classroom3.unity
+    guid: 8792acecfdd109449a6d326a5c9bab57
+  - enabled: 1
+    path: Assets/Scenes/classrooms/classroom4.unity
+    guid: 6e682c1a2ec276143b95fc6a0b840c8e
   m_configObjects: {}

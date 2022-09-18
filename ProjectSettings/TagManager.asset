@@ -12,6 +12,12 @@ TagManager:
   - E1
   - E2
   - Coz
+  - pcasa
+  - Pclass1
+  - Pclass2
+  - Pclass3
+  - Pclass4
+  - Interable
   layers:
   - Default
   - TransparentFX
