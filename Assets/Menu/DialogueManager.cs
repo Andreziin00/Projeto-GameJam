@@ -12,14 +12,13 @@ public class DialogueManager : MonoBehaviour
     public AudioSource lettersound;
     public AudioSource Fimdialogo1;
     //
-    Move jogador;
+    public Move jogador;
+    public bool Fim = false;
     public Animator anim;
-    public Animator CrossFadeAnim;
-    private Queue<string> Sentences;
+    public Queue<string> Sentences;
     //
     void Start()
     {
-    jogador = GameObject.Find("Player").GetComponent<Move>();
     Sentences = new Queue<string>();
     }
 
@@ -61,17 +60,9 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
+        Fim = true;
      Fimdialogo1.Play();
      anim.SetBool("IsOpen", false);
      jogador.CanMove = true;
-     //animação do crossfade
-     Introtest();
-    }
-    public void Introtest()
-    {
-     if(CrossFadeAnim != null)
-     {
-      CrossFadeAnim.SetTrigger("Start");
-     }
     }
 }

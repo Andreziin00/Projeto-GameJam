@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/classrooms/classroom4.unity
     guid: 6e682c1a2ec276143b95fc6a0b840c8e
+  - enabled: 1
+    path: Assets/Scenes/Intro2.unity
+    guid: 3512a8353be2ab741b821187f5849a7a
   m_configObjects: {}

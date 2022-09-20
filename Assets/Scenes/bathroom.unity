@@ -3539,6 +3539,11 @@ PrefabInstance:
       objectReference: {fileID: 1469229583}
     - target: {fileID: 7470565586474405854, guid: 4a255f7504b48684ba30cddf00fe4f46,
         type: 3}
+      propertyPath: jogador
+      value: 
+      objectReference: {fileID: 1789178652}
+    - target: {fileID: 7470565586474405854, guid: 4a255f7504b48684ba30cddf00fe4f46,
+        type: 3}
       propertyPath: NameText
       value: 
       objectReference: {fileID: 584339009}
@@ -4915,6 +4920,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680f5d84b2810f74bb216933d4edd5f6, type: 3}
+--- !u!114 &1789178652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6672851406670061401, guid: 2f98193efb384484eb35d5c668a29224,
+    type: 3}
+  m_PrefabInstance: {fileID: 566813472}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1f7adcdd3a3434bbf66c2521abf783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932854345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5716,7 +5733,7 @@ Tilemap:
     m_Data: {fileID: 4787220596418713537, guid: 2c8e9b2e6b74e77428b685ac1b8b012b,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8427696509956379894, guid: edc4283890ca8cc448cf0cd4c9b69baa,
+    m_Data: {fileID: -1513995962570235875, guid: 2c8e9b2e6b74e77428b685ac1b8b012b,
       type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 3299151863706438731, guid: 2c8e9b2e6b74e77428b685ac1b8b012b,

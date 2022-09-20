@@ -64,11 +64,14 @@ public class Transition : MonoBehaviour
      if(other.CompareTag("Coz"))
      {
         //Coz = porta da cozinha
+        ////
+
       StartCoroutine(LoadLevel("kitchen"));
       Jogador.SalvarPosicao(0,-1);
      }
      if(other.CompareTag("Pclass1"))
      {
+            //
         //Pclass1 = porta da sala1
       StartCoroutine(LoadLevel("classroom"));
       Jogador.SalvarPosicao(0,1);
@@ -82,12 +85,14 @@ public class Transition : MonoBehaviour
      if(other.CompareTag("Pclass3"))
      {
         //Pclass1 = porta da sala3
+        //
       StartCoroutine(LoadLevel("classroom3"));
       Jogador.SalvarPosicao(0,1);
      }
      if(other.CompareTag("Pclass4"))
      {
         //Pclass1 = porta da sala4
+        //
       StartCoroutine(LoadLevel("classroom4"));
       Jogador.SalvarPosicao(0,1);
      }
