@@ -13,6 +13,8 @@ public class DayOneFim : MonoBehaviour
     {
         if (dia.Fim)
         {
+            GlobalDate.NextDay();
+            Debug.Log(GlobalDate.Day);
             StartCoroutine(LoadLevel("Intro2"));
         }
     }

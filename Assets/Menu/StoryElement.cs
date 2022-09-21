@@ -15,14 +15,14 @@ public class StoryElement : MonoBehaviour
 
     void Update()
     {
-     if(Input.GetKeyDown(KeyCode.Space))
+     if(Input.GetKeyDown(KeyCode.Space) && GlobalDate.Day == 1)
      {
       manager.DisplayNextSentences();
      }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-     if(other.CompareTag("Player"))
+     if(other.CompareTag("Player") && GlobalDate.Day == 1)
      {
       TriggerDialogue();
      }

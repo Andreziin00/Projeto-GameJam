@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     //
     void Start()
     {
+    Fim = false;
     Sentences = new Queue<string>();
     }
 
