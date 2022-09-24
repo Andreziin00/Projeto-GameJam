@@ -2231,7 +2231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Name: Taylor
+    Name: 
     sentences:
     - "Bom, aqui termina o nosso primeiro dia, mas n\xE3o saia ainda."
     - "Venha conhecer outro tema que n\xF3s abordamos no nosso projeto..."
