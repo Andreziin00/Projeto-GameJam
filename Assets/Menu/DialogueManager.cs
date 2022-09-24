@@ -10,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI NameText;
     public TextMeshProUGUI DialogueText;
     public AudioSource lettersound;
-    public AudioSource Fimdialogo1;
     //
     public static bool Fim;
     public Animator anim;
@@ -61,7 +60,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         Fim = true;
-     Fimdialogo1.Play();
      anim.SetBool("IsOpen", false);
      Move.CanMove = true;
     }

@@ -3122,7 +3122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &543058907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3285,7 +3285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &676870278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5282,6 +5282,56 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1347982670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347982672}
+  - component: {fileID: 1347982671}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1347982671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347982670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e1a07d7d1bee740887394391f85f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcsBath:
+  - {fileID: 8460537761013919888}
+  - {fileID: 543058906}
+  - {fileID: 676870277}
+  npcsSala2: []
+  npcsLibrary: []
+  npcsaudi: []
+--- !u!4 &1347982672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347982670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.900038, y: -11.352441, z: -12.794468}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1469229583 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3475057911080959650, guid: 6d38d0a9f5ae46444be583e8cfd11b26,
@@ -6385,10 +6435,21 @@ PrefabInstance:
       propertyPath: dialogue.Name
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8460537760942671770, guid: 4ee7e6a5b2b533d46a4792af3314890b,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "o Eryck da sala dois est\xE1 criticando do meu cabelo... \xE9 algo
+        natural sabe? n\xE3o posso mudar quem eu sou."
+      objectReference: {fileID: 0}
     - target: {fileID: 8460537760942671773, guid: 4ee7e6a5b2b533d46a4792af3314890b,
         type: 3}
       propertyPath: m_Name
-      value: Lucas
+      value: Lucas1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460537760942671773, guid: 4ee7e6a5b2b533d46a4792af3314890b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ee7e6a5b2b533d46a4792af3314890b, type: 3}
@@ -6419,3 +6480,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8460537761013919887}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8460537761013919891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8460537761013919888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

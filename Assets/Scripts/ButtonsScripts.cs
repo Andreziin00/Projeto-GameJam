@@ -9,6 +9,7 @@ public class ButtonsScripts : MonoBehaviour
     public void JogarNovamente()
     {
      PlayerPrefs.DeleteAll();
+     GlobalDate.Day = 1;
      SceneManager.LoadScene("Intro");
     }
     public void Creditos()

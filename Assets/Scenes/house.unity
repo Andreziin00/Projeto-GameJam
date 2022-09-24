@@ -2236,8 +2236,8 @@ MonoBehaviour:
     Name: 
     sentences:
     - "Bom dia, filho.\nHoje mais um dia de escola come\xE7a, lembre-se de avan\xE7ar
-      os dialogos apertando espa\xE7o.."
-    - 'e se movimentar pelas teclas WASD...
+      os di\xE1logos apertando a tecla espa\xE7o.."
+    - 'e se movimentar pelas teclas W, A, S, D...
 
       Caso esteja perdido, experimente
       apertar M para abrir o mapa.'
@@ -6900,6 +6900,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1641565372096643686, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6672851406670061398, guid: 2f98193efb384484eb35d5c668a29224,
         type: 3}
       propertyPath: m_RootOrder

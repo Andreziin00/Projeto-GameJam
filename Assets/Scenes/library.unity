@@ -712,7 +712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &211198470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -796,9 +796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fffcb2d9142eb42a7eafeae4ebc5cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Npc1: {fileID: 662852120}
-  Npc2: {fileID: 1393170612}
-  Prof: {fileID: 555934318}
+  NpcLibrary1: []
+  NpcSala1: []
+  NpcLibrary2: []
 --- !u!4 &387717143
 Transform:
   m_ObjectHideFlags: 0
@@ -941,7 +941,7 @@ PrefabInstance:
     - target: {fileID: 7227065322547885368, guid: 667a7128ecf4a9a478571b7551c701cd,
         type: 3}
       propertyPath: m_Name
-      value: Iohana
+      value: Iohana2
       objectReference: {fileID: 0}
     - target: {fileID: 7227065322547885368, guid: 667a7128ecf4a9a478571b7551c701cd,
         type: 3}
@@ -1091,38 +1091,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 555934317}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &555934323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555934318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &662852120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 123847486006037749, guid: 1b371509d0f4e5f4a90c03389c26bf1a,
     type: 3}
   m_PrefabInstance: {fileID: 1750856815}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &662852124
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662852120}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07699299, y: 0.1847825}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.4329681, y: 3.231885}
-  m_EdgeRadius: 0
 --- !u!70 &662852125
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1139,44 +1125,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.00000023841858, y: -0.3541665}
   m_Size: {x: 0.6920295, y: 1.291667}
   m_Direction: 0
---- !u!114 &662852126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662852120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329b8c430a6242c4896d790fd176c13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    Name: 
-    sentences:
-    - "Amanda: Calma amiga, eu sei que deve ser muito constrangedor passar por uma
-      situa\xE7\xE3o dessas..."
-    - "voc\xEA n\xE3o precisava ter pedido esse p\xE3o velho, eu tinha um len\xE7o
-      sobrando na mochila."
-    - "Elisa: E-eu sei, Amanda. Mas isso \xE9 muito vergonhoso."
-    - "Taylor: Ol\xE1? meu nome \xE9 Taylor, fa\xE7o parte do gr\xEAmio estudantil,
-      ser\xE1 que eu posso ajudar voc\xEAs em alguma coisa?"
-    - 'Elisa: ...'
-    - "Amanda: Mesmo que voc\xEA fa\xE7a parte do gr\xEAmio, n\xE3o tem como voc\xEA
-      n\xF3s ajudar com esse problema."
-    - 'Elisa: Amiga... acho que temos que tentar.'
-    - "Amanda: Voc\xEA tem certeza?"
-    - "Se essa \xE9 sua decis\xE3o, voc\xEA tem meu apoio."
-    - 'Elisa: Obrigada, amiga.'
-    - "Bom... \xE9 que eu t\xF4 com um problema sobre a minha... voc\xEA sabe."
-    - "Taylor: N\xE3o entendi o que voc\xEA quis dizer."
-    - "Elisa: \xC9 que a minha m\xE3e n\xE3o tem condi\xE7\xF5es de comprar absorventes... "
-    - "ent\xE3o eu acabo tendo que usar materiais que n\xE3o s\xE3o apropriados."
-    - " Taylor: J\xE1 entendi a situa\xE7\xE3o, vou imediatamente falar com algum
-      respons\xE1vel do corpo docente..."
-    - "para tentar achar uma possivel solu\xE7\xE3o para seu problema."
-    - Elisa:O-obrigada, Taylor.
-  you: 0
 --- !u!1001 &704402237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6645,7 +6593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1041161549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6700,6 +6648,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetivo: {fileID: 0}
   DoString: "Encontre Eryck, Lucas e Jacob no audit\xF3rio."
+--- !u!1 &1062112233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062112235}
+  - component: {fileID: 1062112234}
+  - component: {fileID: 1062112236}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1062112234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062112233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e1a07d7d1bee740887394391f85f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcsBath: []
+  npcsSala2: []
+  npcsLibrary:
+  - {fileID: 2070553403}
+  - {fileID: 1903834804}
+  - {fileID: 1041161548}
+  npcsaudi: []
+--- !u!4 &1062112235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062112233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4967084, y: -3.2456112, z: -13.081997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062112236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062112233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fffcb2d9142eb42a7eafeae4ebc5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NpcLibrary1:
+  - {fileID: 1393170612}
+  - {fileID: 662852120}
+  - {fileID: 211198469}
+  - {fileID: 2008249889}
+  NpcSala1: []
+  NpcLibrary2:
+  - {fileID: 555934318}
 --- !u!114 &1134926162 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3475057912219541707, guid: 6d38d0a9f5ae46444be583e8cfd11b26,
@@ -8427,6 +8446,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1393170611}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1393170614
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393170612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.35114503, y: 0.62551284}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.289244, y: 4.2644534}
+  m_EdgeRadius: 0
+--- !u!70 &1393170615
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393170612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.010559082, y: 0.63042045}
+  m_Size: {x: 0.76769257, y: 1.2608409}
+  m_Direction: 0
+--- !u!114 &1393170616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393170612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1393170617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393170612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329b8c430a6242c4896d790fd176c13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    Name: 
+    sentences:
+    - "Amanda: Calma amiga, eu sei que deve ser muito constrangedor passar por uma
+      situa\xE7\xE3o dessas..."
+    - "voc\xEA n\xE3o precisava ter pedido esse p\xE3o velho, eu tinha um len\xE7o
+      sobrando na mochila."
+    - "Elisa: E-eu sei, Amanda. Mas isso \xE9 muito vergonhoso."
+    - "Taylor: Ol\xE1? meu nome \xE9 Taylor, fa\xE7o parte do gr\xEAmio estudantil,
+      ser\xE1 que eu posso ajudar voc\xEAs em alguma coisa?"
+    - 'Elisa: ...'
+    - "Amanda: Mesmo que voc\xEA fa\xE7a parte do gr\xEAmio, n\xE3o tem como voc\xEA
+      n\xF3s ajudar com esse problema."
+    - 'Elisa: Amiga... acho que temos que tentar.'
+    - "Amanda: Voc\xEA tem certeza?"
+    - "Se essa \xE9 sua decis\xE3o, voc\xEA tem meu apoio."
+    - 'Elisa: Obrigada, amiga.'
+    - "Bom... \xE9 que eu t\xF4 com um problema sobre a minha... voc\xEA sabe."
+    - "Taylor: N\xE3o entendi o que voc\xEA quis dizer."
+    - "Elisa: \xC9 que a minha m\xE3e n\xE3o tem condi\xE7\xF5es de comprar absorventes... "
+    - "ent\xE3o eu acabo tendo que usar materiais que n\xE3o s\xE3o apropriados."
+    - " Taylor: J\xE1 entendi a situa\xE7\xE3o, vou imediatamente falar com algum
+      respons\xE1vel do corpo docente..."
+    - "para tentar achar uma possivel solu\xE7\xE3o para seu problema."
+    - Elisa:O-obrigada, Taylor.
+  you: 0
 --- !u!95 &1409214724 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6612512922396502295, guid: 680f5d84b2810f74bb216933d4edd5f6,
@@ -11351,7 +11462,7 @@ PrefabInstance:
     - target: {fileID: 123847486006037749, guid: 1b371509d0f4e5f4a90c03389c26bf1a,
         type: 3}
       propertyPath: m_Name
-      value: ElisaIdle
+      value: ElisaIdle2
       objectReference: {fileID: 0}
     - target: {fileID: 123847486006037749, guid: 1b371509d0f4e5f4a90c03389c26bf1a,
         type: 3}
@@ -11443,7 +11554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1903834805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11515,7 +11626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2008249890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11529,10 +11640,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07699299, y: 0.1847825}
+  m_Offset: {x: -0.37110662, y: 0.62551284}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
@@ -11540,7 +11651,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4329681, y: 3.231885}
+  m_Size: {x: 4.0003424, y: 4.2644534}
   m_EdgeRadius: 0
 --- !u!4 &2008249891
 Transform:
@@ -11675,7 +11786,12 @@ PrefabInstance:
     - target: {fileID: 341003693678317506, guid: a7a6376fe645d6d469090dfa6ce477cf,
         type: 3}
       propertyPath: m_Name
-      value: Professor
+      value: Professor2
+      objectReference: {fileID: 0}
+    - target: {fileID: 341003693678317506, guid: a7a6376fe645d6d469090dfa6ce477cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 341003693678317516, guid: a7a6376fe645d6d469090dfa6ce477cf,
         type: 3}
@@ -11761,3 +11877,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2070553402}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2070553406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070553403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

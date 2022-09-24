@@ -10,7 +10,7 @@ public class TransitionTOAudi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DialogueManager.Fim && TalkedWithElisa.talkedLohane)
+        if (DialogueManager.Fim && TalkedWithElisa.talkedLohane2)
         {
             StartCoroutine(LoadLevel("auditorio"));
         }

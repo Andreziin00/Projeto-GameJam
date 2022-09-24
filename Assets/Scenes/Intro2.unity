@@ -2113,6 +2113,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1641565372096643686, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6672851406670061398, guid: 2f98193efb384484eb35d5c668a29224,
         type: 3}
       propertyPath: m_RootOrder
@@ -2228,8 +2233,8 @@ MonoBehaviour:
   dialogue:
     Name: Taylor
     sentences:
-    - ACABOU O PRIMEIRO DIA
-    - FELIZ PASCOA
+    - "Bom, aqui termina o nosso primeiro dia, mas n\xE3o saia ainda."
+    - "Venha conhecer outro tema que n\xF3s abordamos no nosso projeto..."
   you: 1
 --- !u!1001 &1662523956
 PrefabInstance:

@@ -17519,7 +17519,7 @@ PrefabInstance:
     - target: {fileID: 123847486006037749, guid: 1b371509d0f4e5f4a90c03389c26bf1a,
         type: 3}
       propertyPath: m_Name
-      value: ElisaIdle
+      value: ElisaIdle1
       objectReference: {fileID: 0}
     - target: {fileID: 123847486006037749, guid: 1b371509d0f4e5f4a90c03389c26bf1a,
         type: 3}
@@ -17662,3 +17662,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6323489943894190613}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6323489943894190619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323489943894190614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

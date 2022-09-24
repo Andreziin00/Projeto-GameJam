@@ -311,11 +311,11 @@ MonoBehaviour:
   dialogue:
     Name: 
     sentences:
-    - "Ol\xE1, seja bem vindo ao gera\xE7\xE3o consciente, para avan\xE7ar os dialogos
-      aperte espa\xE7o..."
+    - "Ol\xE1, seja bem vindo ao gera\xE7\xE3o consciente, para avan\xE7ar os di\xE1logos
+      aperte a tecla espa\xE7o..."
     - "Meu nome \xE9 Taylor, eu fa\xE7o parte do gr\xEAmio da escola, nosso objetivo
       \xE9 ajudar alunos com dificuldades em seu dia a dia."
-    - "Esperamos que tenha uma boa experi\xEAncia... n\xF3s vemos em breve."
+    - "Esperamos que tenha uma boa experi\xEAncia... nos vemos em breve."
 --- !u!1001 &537659563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,6 +625,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1641565372096643686, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6672851406670061398, guid: 2f98193efb384484eb35d5c668a29224,
         type: 3}
       propertyPath: m_RootOrder
