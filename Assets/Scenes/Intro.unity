@@ -311,9 +311,11 @@ MonoBehaviour:
   dialogue:
     Name: 
     sentences:
-    - ASDASDSAD
-    - WQEWQEWQEWQ
-    - ZXCXCXZCXZCx
+    - "Ol\xE1, seja bem vindo ao gera\xE7\xE3o consciente, para avan\xE7ar os dialogos
+      aperte espa\xE7o..."
+    - "Meu nome \xE9 Taylor, eu fa\xE7o parte do gr\xEAmio da escola, nosso objetivo
+      \xE9 ajudar alunos com dificuldades em seu dia a dia."
+    - "Esperamos que tenha uma boa experi\xEAncia... n\xF3s vemos em breve."
 --- !u!1001 &537659563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,8 +433,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guia
       objectReference: {fileID: 0}
+    - target: {fileID: 1944037871345241917, guid: 86970cf8534a50d44b53cbcd221b151c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86970cf8534a50d44b53cbcd221b151c, type: 3}
+--- !u!1 &537659564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3168305236853678030, guid: 86970cf8534a50d44b53cbcd221b151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 537659563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &537659565 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6282082229027284615, guid: 86970cf8534a50d44b53cbcd221b151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 537659563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &928345931
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6069d921e745a14d89006568f508741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dia: {fileID: 1747813834}
   Fadeanim: {fileID: 2027587148}
 --- !u!114 &933773489 stripped
 MonoBehaviour:
@@ -672,6 +690,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8266466265748284206, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: Esc
+      value: 
+      objectReference: {fileID: 537659564}
+    - target: {fileID: 8266466265748284206, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: EscAnim
+      value: 
+      objectReference: {fileID: 537659565}
+    - target: {fileID: 8266466265748284206, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f98193efb384484eb35d5c668a29224, type: 3}
 --- !u!114 &1729666903 stripped
@@ -684,18 +717,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1747813834 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7470565586474405854, guid: 4a255f7504b48684ba30cddf00fe4f46,
-    type: 3}
-  m_PrefabInstance: {fileID: 1301009427}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efff4b07af30d647a5e7360ad4370ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1769311760
@@ -858,6 +879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475057911080959711, guid: 6d38d0a9f5ae46444be583e8cfd11b26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6999817
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d38d0a9f5ae46444be583e8cfd11b26, type: 3}

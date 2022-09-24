@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GlobalDate : MonoBehaviour
 {
-    public static int Day = 2;
+    public static int Day = 1;
 
     public static void NextDay()
     {

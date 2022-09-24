@@ -188,6 +188,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8266466265748284206, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: Esc
+      value: 
+      objectReference: {fileID: 318585790}
+    - target: {fileID: 8266466265748284206, guid: 2f98193efb384484eb35d5c668a29224,
+        type: 3}
+      propertyPath: EscAnim
+      value: 
+      objectReference: {fileID: 318585791}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f98193efb384484eb35d5c668a29224, type: 3}
 --- !u!1 &150452382
@@ -5425,6 +5435,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86970cf8534a50d44b53cbcd221b151c, type: 3}
+--- !u!1 &318585790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3168305236853678030, guid: 86970cf8534a50d44b53cbcd221b151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 318585789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &318585791 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6282082229027284615, guid: 86970cf8534a50d44b53cbcd221b151c,
+    type: 3}
+  m_PrefabInstance: {fileID: 318585789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330195518
 GameObject:
   m_ObjectHideFlags: 0

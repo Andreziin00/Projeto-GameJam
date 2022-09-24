@@ -44,7 +44,7 @@ public class Transition : MonoBehaviour
      {
         //ref = refeitorio
       StartCoroutine(LoadLevel("refeitorio"));
-      Jogador.SalvarPosicao(1,0);
+      Jogador.SalvarPosicao(2,0);
 
      }
      if(other.CompareTag("E1"))

@@ -12,8 +12,7 @@ public class DialogueManager : MonoBehaviour
     public AudioSource lettersound;
     public AudioSource Fimdialogo1;
     //
-    public Move jogador;
-    public bool Fim = false;
+    public static bool Fim;
     public Animator anim;
     public Queue<string> Sentences;
     //
@@ -64,6 +63,6 @@ public class DialogueManager : MonoBehaviour
         Fim = true;
      Fimdialogo1.Play();
      anim.SetBool("IsOpen", false);
-     jogador.CanMove = true;
+     Move.CanMove = true;
     }
 }

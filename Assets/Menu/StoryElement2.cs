@@ -6,12 +6,10 @@ public class StoryElement2 : MonoBehaviour
 {
     public Dialogue dialogue;
     DialogueManager manager;
-    Move jogador;
     public bool you = false;
     void Start()
     {
      manager = FindObjectOfType<DialogueManager>();
-     jogador = GameObject.Find("Player").GetComponent<Move>();
     }
 
     void Update()
@@ -37,6 +35,6 @@ public class StoryElement2 : MonoBehaviour
     public void TriggerDialogue()
     {
      manager.StartDialogue(dialogue);
-     jogador.CanMove = false;
+     Move.CanMove = false;
     }
 }

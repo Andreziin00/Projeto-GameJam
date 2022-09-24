@@ -7,7 +7,7 @@ public class Move : MonoBehaviour
     public Rigidbody2D rb;
     public int speed = 5;
     Vector2 move;
-    public bool CanMove = true;
+    public static bool CanMove = true;
 
     Animator anim;
     // Start is called before the first frame update

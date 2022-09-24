@@ -5,15 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class DayOneFim : MonoBehaviour
 {
-    public DialogueManager dia;
     public Animator Fadeanim;
 
     // Update is called once per frame
     void Update()
     {
-        if (dia.Fim)
+        if(GlobalDate.Day == 2 && DialogueManager.Fim)
+        {
+         StartCoroutine(LoadLevel("Fim"));
+        }
+        if (GlobalDate.Day == 1 && DialogueManager.Fim)
         {
             GlobalDate.NextDay();
+            PlayerPrefs.DeleteAll();
             Debug.Log(GlobalDate.Day);
             StartCoroutine(LoadLevel("Intro2"));
         }

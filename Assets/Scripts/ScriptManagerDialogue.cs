@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ScriptManagerDialogue : MonoBehaviour
 {
-    public DialogueManager dia;
     public Animator Fadeanim;
     void Start()
     {
@@ -15,7 +14,7 @@ public class ScriptManagerDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(dia.jogador.CanMove == true)
+       if(DialogueManager.Fim)
         {
             StartCoroutine(LoadLevel("house"));
         }

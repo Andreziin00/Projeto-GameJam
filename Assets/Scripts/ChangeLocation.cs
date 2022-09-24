@@ -14,6 +14,10 @@ public class ChangeLocation : MonoBehaviour
         {   
          transform.position = new Vector2(PositionX, PositionY);
         }
+     if(this.gameObject.name == "Player")
+     {
+      Move.CanMove = false;
+     }
      if(NoStay)
      {
       Destroy(this.gameObject);
