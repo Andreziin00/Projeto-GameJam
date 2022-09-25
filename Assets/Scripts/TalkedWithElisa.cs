@@ -22,7 +22,9 @@ public class TalkedWithElisa : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
      //Dia2
-     if(other.CompareTag("Player") && GlobalDate.Day == 2 && PlayerPrefs.GetInt("CountEventD2") == 0 && PlayerPrefs.GetInt(this.gameObject.name) == 0)
+     if(this.enabled)
+     {
+        if(other.CompareTag("Player") && GlobalDate.Day == 2 && PlayerPrefs.GetInt("CountEventD2") == 0 && PlayerPrefs.GetInt(this.gameObject.name) == 0)
      {
       talkedElisa1 = true;
       Debug.Log("Elisa1 "+ talkedElisa1);
@@ -51,6 +53,7 @@ public class TalkedWithElisa : MonoBehaviour
       talkedLohane2 = true;
       Debug.Log("Lohane2 "+talkedLohane2);
       PlayerPrefs.SetInt(this.gameObject.name, 1);
+     }
      }
      
      //Dia1

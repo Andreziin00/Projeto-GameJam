@@ -10,16 +10,16 @@ public class DayOneFim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GlobalDate.Day == 2 && DialogueManager.Fim)
-        {
-         StartCoroutine(LoadLevel("Fim"));
-        }
         if (GlobalDate.Day == 1 && DialogueManager.Fim)
         {
             GlobalDate.NextDay();
             PlayerPrefs.DeleteAll();
             Debug.Log(GlobalDate.Day);
             StartCoroutine(LoadLevel("Intro2"));
+        }
+        if(GlobalDate.Day == 2 && DialogueManager.Fim && TalkedWithElisa.talkedLohane2)
+        {
+         StartCoroutine(LoadLevel("Fim"));
         }
     }
     IEnumerator LoadLevel(string levelname)

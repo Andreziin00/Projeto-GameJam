@@ -27018,6 +27018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb02e44abe04a5499f0ff25c9818f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talked: {fileID: 341003692099057130}
+  boxprof: {fileID: 341003692099057131}
   Npcs:
   - {fileID: 2077199871}
 --- !u!1 &1379761228
@@ -30342,6 +30344,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3287b37bb6c7fae4094087d46388fed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &341003692099057131 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 341003693678317507, guid: a7a6376fe645d6d469090dfa6ce477cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 341003692099057126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &341003692099057135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 341003693678317516, guid: a7a6376fe645d6d469090dfa6ce477cf,

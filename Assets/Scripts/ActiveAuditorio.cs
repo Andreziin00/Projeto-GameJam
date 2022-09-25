@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ActiveAuditorio : MonoBehaviour
 {
+  public TalkedWithElisa talked;
     public GameObject[] Npcs;
     void Start()
     {
@@ -12,6 +13,14 @@ public class ActiveAuditorio : MonoBehaviour
       foreach (GameObject ob in Npcs)
       {
         ob.SetActive(true);
+      }
+      if(talked != null)
+      {
+      talked.enabled = false;
+      }
+      else
+      {
+        return;
       }
     } 
     }
